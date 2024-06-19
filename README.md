@@ -1,14 +1,23 @@
-# Project Assignment
-## Zomato restaurant listing & searching
-Key Use Cases
-- Use the data from [here](https://www.kaggle.com/datasets/shrutimehta/zomato-restaurants-data) to load Zomato restaurant data into database. This would be a independent script the candidate can write.
-- Implement a web API service to expose 2 APIs
-    + Get restaurant by id
-    + Get List of restaurants
-      + Pagination support for list restaurants
-
-- Add UI for List page & individual restaurant page.
+# Project Assignment: Zomato Restaurant Listing & Searching
  
-Additional Use cases based on Time:
-- Filter capabilities by Country, Average spend for 2, Cuisines.
-- Search restaurants by name & Description.
+## Key Use Cases
+ 
+### Data Loading
+- Utilize the Zomato restaurant data available [here](https://www.kaggle.com/datasets/shrutimehta/zomato-restaurants-data) to load information into a database. This should be done through an independent script.
+ 
+### Web API Service
+- Develop a web API service with the following endpoints:
+  - **Get Restaurant by ID**: Retrieve details of a specific restaurant by its ID.
+  - **Get List of Restaurants**: Fetch a list of restaurants with pagination support.
+ 
+### User Interface
+- Create a user interface featuring:
+  - A list page displaying the restaurants.
+  - A page to display the details of one restaurant.
+ 
+## Additional Use Cases (Based on Availability of Time)
+- Implement filtering options by:
+  - Country
+  - Average spend for two people
+  - Cuisines
+- Enable search functionality for restaurants by name and description.
