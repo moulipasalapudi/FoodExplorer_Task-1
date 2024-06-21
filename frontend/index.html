@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodExplorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://image.similarpng.com/very-thumbnail/2021/09/Good-food-logo-design-on-transparent-background-PNG.png" alt="Logo" height="70">
+            <h1>FoodExplorer</h1>
+        </div>
+        <div class="filters">
+            <div class="filter-item">
+                <label for="country">CountryCode:</label>
+                <select id="country">
+                    
+                </select>
+            </div>
+
+            <div class="filter-item">
+                <label for="cuisine">Cuisine:</label>
+                <input type="text" id="cuisine" placeholder="Enter cuisine">
+            </div>
+
+            <div class="filter-item">
+                <label for="min_cost">Min Cost:</label>
+                <input type="number" id="min_cost" placeholder="Min cost">
+            </div>
+
+            <div class="filter-item">
+                <label for="max_cost">Max Cost:</label>
+                <input type="number" id="max_cost" placeholder="Max cost">
+            </div>
+
+            <div class="filter-item">
+                <button onclick="applyFilters()">Apply Filters</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+       
+        <div id="restaurant-list">
+           
+        </div>
+
+        <div class="pagination" id="pagination">
+            
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

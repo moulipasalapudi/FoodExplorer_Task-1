@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=mysql+mysqlconnector://srimoulipsn3003@gmail.com:Mouli%401233@localhost:3306/zomato_db
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "80:80"
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: zomato_db
+      MYSQL_USER: srimoulipsn3003@gmail.com
+      MYSQL_PASSWORD: Mouli@1233
+    volumes:
+      - ./data:/var/lib/mysql  # Persistent storage for MySQL data
+      - ./db-init:/docker-entrypoint-initdb.d  # Mounting initialization scripts
