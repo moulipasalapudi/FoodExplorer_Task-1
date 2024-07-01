@@ -88,7 +88,7 @@ def get_countries():
 @app.route('/api/restaurants', methods=['GET'])
 def get_restaurants():
     page = request.args.get('page', 1, type=int)
-    per_page = request.args.get('per_page', 10, type=int)
+    per_page = request.args.get('per_page', 7, type=int)
     country = request.args.get('country')
     min_cost = request.args.get('min_cost', type=int)
     max_cost = request.args.get('max_cost', type=int)
